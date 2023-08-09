@@ -22,7 +22,6 @@ const Restaurant = () => {
     };
 
     const isMounted = useIsMounted();
-    console.log(incrementPage(), 'incrementPage');
     const fetchRestaurantData = () => {
         getRestaurantsService({ ...queryParam, page })
             .then((response) => {

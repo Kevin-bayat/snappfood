@@ -13,7 +13,6 @@ const restaurantDataSlice = createSlice({
             state.restaurantData = [...state.restaurantData, ...action.payload];
         },
         incrementPage: (state) => {
-            console.log({ state });
             state.page += 1;
         }
     }

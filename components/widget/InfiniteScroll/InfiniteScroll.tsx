@@ -8,7 +8,7 @@ type Props = {
 };
 const InfiniteScroll = ({ fetchRestaurantData }: Props) => {
     const { page } = useSelector(selectRestaurantState);
-    console.log(window.innerHeight);
+
     const handleScroll = useCallback(() => {
         if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight) {
             fetchRestaurantData?.();
