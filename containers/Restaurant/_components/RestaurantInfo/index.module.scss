@@ -1,0 +1,13 @@
+@import 'shared/styles/variables';
+.container {
+    width: 100%;
+    padding: 1rem;
+    &__restaurantInfo {
+        border-radius: 6px;
+        margin: 20px auto;
+        box-shadow: $box-shadow;
+        border: 0.5px solid $light-gray;
+        position: relative;
+        max-width: 567px;
+    }
+}

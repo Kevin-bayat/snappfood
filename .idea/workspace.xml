@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="10506e13-9d89-41c7-a25b-cd2cda4d7f8b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintrc.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_api/axiosInstances/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_api/errorHandler/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_api/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_api/services/core/methods.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_api/services/core/urls.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/Card/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/Card/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/LinkButton/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/LinkButton/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/Skeleton/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/Skeleton/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/widget/InfiniteScroll/InfiniteScroll.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/containers/Home/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/containers/Home/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/containers/Restaurant/_components/RestaurantInfo/_components/ImageSection/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/containers/Restaurant/_components/RestaurantInfo/_components/ImageSection/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/containers/Restaurant/_components/RestaurantInfo/_components/InfoSection/_svg/BadgeSvg/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/containers/Restaurant/_components/RestaurantInfo/_components/InfoSection/_svg/RateSvg/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/containers/Restaurant/_components/RestaurantInfo/_components/InfoSection/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/containers/Restaurant/_components/RestaurantInfo/_components/InfoSection/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/containers/Restaurant/_components/RestaurantInfo/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/containers/Restaurant/_components/RestaurantInfo/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/containers/Restaurant/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/containers/Restaurant/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/restaurantData/restaurantDataSlice.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/store.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/restaurant/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/MaterialIcon.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX-faNum/woff/IRANSansXFaNum-Black.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX-faNum/woff/IRANSansXFaNum-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX-faNum/woff/IRANSansXFaNum-DemiBold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX-faNum/woff/IRANSansXFaNum-ExtraBold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX-faNum/woff/IRANSansXFaNum-Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX-faNum/woff/IRANSansXFaNum-Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX-faNum/woff/IRANSansXFaNum-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX-faNum/woff/IRANSansXFaNum-Thin.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX-faNum/woff/IRANSansXFaNum-UltraLight.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX-faNum/woff2/IRANSansXFaNum-Black.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX-faNum/woff2/IRANSansXFaNum-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX-faNum/woff2/IRANSansXFaNum-DemiBold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX-faNum/woff2/IRANSansXFaNum-ExtraBold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX-faNum/woff2/IRANSansXFaNum-Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX-faNum/woff2/IRANSansXFaNum-Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX-faNum/woff2/IRANSansXFaNum-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX-faNum/woff2/IRANSansXFaNum-Thin.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX-faNum/woff2/IRANSansXFaNum-UltraLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX/woff/IRANSansX-Black.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX/woff/IRANSansX-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX/woff/IRANSansX-DemiBold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX/woff/IRANSansX-ExtraBold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX/woff/IRANSansX-Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX/woff/IRANSansX-Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX/woff/IRANSansX-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX/woff/IRANSansX-Thin.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX/woff/IRANSansX-UltraLight.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX/woff2/IRANSansX-Black.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX/woff2/IRANSansX-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX/woff2/IRANSansX-DemiBold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX/woff2/IRANSansX-ExtraBold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX/woff2/IRANSansX-Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX/woff2/IRANSansX-Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX/woff2/IRANSansX-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX/woff2/IRANSansX-Thin.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/fonts/iransansX/woff2/IRANSansX-UltraLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/images/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/images/favicon-96x96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/constants/restaurant/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/hooks/useIsMounted/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/models/vendor.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/styles/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/styles/global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/utilities/getDeliveryType/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/utilities/services/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/hello.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2TeSIacj0gOq2IFNu1URHbShFSy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/keyvan/Public/projects/snappfood-task/components/widget",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/keyvan/Public/projects/snappfood-task/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/keyvan/Public/projects/snappfood-task/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/widget" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public/static/images" />
+      <recent name="$PROJECT_DIR$/shared" />
+      <recent name="$PROJECT_DIR$/shared/utilities" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/containers/Restaurant/_components/RestaurantInfo/_components/InfoSection/_svg/BadgeSvg" />
+      <recent name="$PROJECT_DIR$/shared" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10506e13-9d89-41c7-a25b-cd2cda4d7f8b" name="Changes" comment="" />
+      <created>1691401973835</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691401973835</updated>
+      <workItem from="1691401974885" duration="22000" />
+      <workItem from="1691402041615" duration="22103000" />
+      <workItem from="1691482126218" duration="18310000" />
+      <workItem from="1691523043312" duration="10599000" />
+      <workItem from="1691580372223" duration="17639000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

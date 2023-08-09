@@ -1,0 +1,26 @@
+@import 'shared/styles/variables';
+.container {
+    position: relative;
+    width: 100%;
+    &__mainLogo {
+        padding: 4px;
+        border: 1px solid $light-gray;
+        border-radius: 6px;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background: $main;
+        bottom: -15px;
+        margin-right: 10px;
+    }
+    &__logo {
+        margin: 0 auto;
+        border-radius: 4px;
+        padding-bottom: 3px;
+    }
+    &__mainImage {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 6px;
+    }
+}

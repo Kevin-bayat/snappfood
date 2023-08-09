@@ -1,0 +1,97 @@
+@import 'shared/styles/variables';
+.container {
+    padding: 40px 16px 8px 16px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    overflow: unset;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__discount {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__discountBadge {
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        text-shadow: none !important;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        direction: rtl;
+        -webkit-box-direction: normal;
+        box-sizing: inherit;
+        user-select: none;
+        font-size: 12px;
+        font-weight: 400;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        margin-right: 5px;
+        border-radius: 4px;
+        text-align: center;
+        vertical-align: middle;
+        padding: 4px;
+        padding-bottom: 3px;
+        color: white;
+        background-color: $snapp-food-color;
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__commentInfo {
+        display: flex;
+        align-items: center;
+    }
+    &__commentCount {
+        color: $gray;
+        font-size: 0.8em;
+    }
+    &__rate {
+        font-weight: $font-weight-400;
+        text-shadow: none !important;
+        font-size: 12px;
+        box-sizing: inherit;
+        user-select: none;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: start;
+        align-items: flex-start;
+        padding: 2px 4px 2px 2px;
+        border-radius: 4px;
+        background-color: $dark-green;
+        color: $yellow-green;
+    }
+    &__foodName {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 0.85em;
+        padding: 5px 0;
+    }
+    &__type {
+        padding-left: 5px;
+    }
+    &__pickup {
+        font-size: 12px;
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 10px;
+    }
+    &__deliveryType {
+        padding-left: 4px;
+        color: $gray;
+    }
+}

@@ -1,3 +1,45 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "no-undef": "off"
+      }
+    },
+    {
+      "files": ["*.d.ts"],
+      "rules": {
+        "import/no-unresolved": "off"
+      }
+    }
+  ],
+  "rules": {
+    "eqeqeq": "off",
+    "no-debugger": "error",
+    "no-duplicate-imports": "error",
+    "no-sparse-arrays": "error",
+    "no-template-curly-in-string": "warn",
+    "no-undef": "error",
+    "no-unreachable": "error",
+    "valid-typeof": "error",
+    "react/display-name": "off",
+    "no-extra-semi": "error",
+    "no-redeclare": "error",
+    "no-var": "error",
+    "prefer-object-spread": "error",
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    "func-call-spacing": "error",
+    "semi-spacing": "error",
+    "react-hooks/exhaustive-deps": "off",
+    "react/no-unescaped-entities": "off",
+    "react/no-find-dom-node": "off",
+    "react/jsx-no-target-blank": "off",
+    "camelcase": "off"
+  }
 }

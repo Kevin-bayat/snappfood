@@ -1,0 +1,26 @@
+@import 'shared/styles/variables';
+.container {
+    width: 100%;
+    padding: 2rem;
+
+    &__card {
+        margin: 40px auto;
+        max-width: 567px;
+        border: 0.5px solid $light-gray;
+        border-radius: 6px;
+        box-shadow: $box-shadow;
+        padding: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        > div {
+            font-size: 14px;
+            text-align: center;
+            @media screen and (max-width: $xxs) {
+                font-size: 10px;
+            }
+        }
+    }
+}

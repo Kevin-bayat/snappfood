@@ -1,0 +1,19 @@
+@import 'shared/styles/variables';
+.link {
+    text-align: center;
+    .button {
+        background: $snapp-food-color;
+        color: $main;
+        margin-top: 2rem;
+        width: fit-content;
+        border: 0.5px solid $snapp-food-color;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 6px;
+
+        &:hover {
+            color: $snapp-food-color;
+            background: $main;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+apps/sega/shared/constants/landingsContent/
+public/
+static/
+node_modules/
+.next/
+build/
+dist/
