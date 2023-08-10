@@ -1,26 +1,25 @@
-import React, { useCallback, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Skeleton from '../../UI/Skeleton';
 import { useSelector } from 'react-redux';
 import { selectRestaurantState } from '@/restaurantData/restaurantDataSlice';
+import Card from '../../UI/Card';
 
 type Props = {
     fetchRestaurantData: any;
+    isLoading: boolean;
 };
-const InfiniteScroll = ({ fetchRestaurantData }: Props) => {
+const InfiniteScroll = ({ fetchRestaurantData, isLoading }: Props) => {
     const { page } = useSelector(selectRestaurantState);
-
-    const handleScroll = useCallback(() => {
-        if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight) {
-            fetchRestaurantData?.();
+    const handleScroll = () => {
+        if (window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight || isLoading) {
+            return;
         }
-    }, [fetchRestaurantData]);
+        fetchRestaurantData();
+    };
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
+        return () => window.removeEventListener('scroll', handleScroll);
     }, [handleScroll]);
 
     useEffect(() => {
@@ -29,12 +28,14 @@ const InfiniteScroll = ({ fetchRestaurantData }: Props) => {
         }
     }, [fetchRestaurantData, page]);
 
-    return (
+    return isLoading ? (
         <>
             <Skeleton />
             <Skeleton />
             <Skeleton />
         </>
+    ) : (
+        <Card />
     );
 };
 

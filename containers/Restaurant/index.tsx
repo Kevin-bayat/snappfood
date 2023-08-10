@@ -1,19 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import Card from '../../components/UI/Card';
+import React, { useCallback, useState } from 'react';
 import classes from './index.module.scss';
 import { useIsMounted } from '@/hooks/useIsMounted';
 import { useDispatch, useSelector } from 'react-redux';
 import { incrementPage, selectRestaurantState, setRestaurantDataAction } from '@/restaurantData/restaurantDataSlice';
 import { getRestaurantsService } from '@/services/core/methods';
 import { VENDOR_TYPE } from '@/constants/restaurant';
-import Skeleton from '../../components/UI/Skeleton';
-import InfiniteScroll from '../../components/widget/InfiniteScroll/InfiniteScroll';
+import InfiniteScroll from '../../components/widget/InfiniteScroll';
 
 const Restaurant = () => {
-    const [isLoading, setIsLoading] = useState(true);
+    //state
+    const [isLoading, setIsLoading] = useState(false);
+    //redux
     const { page } = useSelector(selectRestaurantState);
-
     const dispatch = useDispatch();
+    //hook
+    const isMounted = useIsMounted();
+
     const queryParam = {
         page: 0,
         page_size: 10,
@@ -21,34 +23,26 @@ const Restaurant = () => {
         long: 51.328
     };
 
-    const isMounted = useIsMounted();
-    const fetchRestaurantData = () => {
-        getRestaurantsService({ ...queryParam, page })
-            .then((response) => {
-                if (isMounted?.current) {
-                    const filteredData = response.data.data.finalResult.filter((item) => {
-                        if (item.type === VENDOR_TYPE) {
-                            return item.data;
-                        }
-                    });
-                    dispatch(setRestaurantDataAction(filteredData));
-                    dispatch(incrementPage());
+    const fetchRestaurantData = useCallback(async () => {
+        try {
+            setIsLoading(true);
+            const response = await getRestaurantsService({ ...queryParam, page });
+            const filteredData = response.data.data.finalResult.filter((item) => {
+                if (item.type === VENDOR_TYPE) {
+                    return item.data;
                 }
-            })
-            .catch(() => {})
-            .finally(() => isMounted?.current && setIsLoading(false));
-    };
+            });
+            dispatch(setRestaurantDataAction(filteredData));
+            dispatch(incrementPage());
+        } catch (e) {
+        } finally {
+            isMounted?.current && setIsLoading(false);
+        }
+    }, [dispatch, page]);
 
-    useEffect(() => {
-        fetchRestaurantData();
-    }, []);
-
-    return isLoading ? (
-        <Skeleton />
-    ) : (
+    return (
         <div className={classes.container}>
-            <Card />
-            <InfiniteScroll fetchRestaurantData={fetchRestaurantData} />
+            <InfiniteScroll isLoading={isLoading} fetchRestaurantData={fetchRestaurantData} />
         </div>
     );
 };
