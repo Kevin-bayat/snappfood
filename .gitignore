@@ -9,7 +9,7 @@ yarn.lock
 .prettierignore
 # testing
 /coverage
-
+.idea
 # next.js
 /.next/
 /out/
