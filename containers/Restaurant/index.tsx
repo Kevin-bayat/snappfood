@@ -6,6 +6,8 @@ import { incrementPage, selectRestaurantState, setRestaurantDataAction } from '@
 import { getRestaurantsService } from '@/services/core/methods';
 import { VENDOR_TYPE } from '@/constants/restaurant';
 import InfiniteScroll from '../../components/widget/InfiniteScroll';
+import { toast } from 'react-toastify';
+import Toast from '../../components/UI/Toast';
 
 const Restaurant = () => {
     //state
@@ -35,13 +37,14 @@ const Restaurant = () => {
             dispatch(setRestaurantDataAction(filteredData));
             dispatch(incrementPage());
         } catch (e) {
+            toast.error(e.message);
         } finally {
             isMounted?.current && setIsLoading(false);
         }
     }, [dispatch, page]);
-
     return (
         <div className={classes.container}>
+            <Toast />
             <InfiniteScroll isLoading={isLoading} fetchRestaurantData={fetchRestaurantData} />
         </div>
     );

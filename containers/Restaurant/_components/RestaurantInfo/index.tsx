@@ -13,7 +13,7 @@ const RestaurantInfo = () => {
                 ({
                     data: { title, logo, backgroundImage, rate, cuisinesArray, deliveryFee, isZFExpress, commentCount, discountValueForView, menuUrl }
                 }) => (
-                    <div className={classes.container__restaurantInfo}>
+                    <div key={title} className={classes.container__restaurantInfo}>
                         <ImageSection title={title} logo={logo} backgroundImage={backgroundImage} />
                         <InfoSection
                             rate={rate}

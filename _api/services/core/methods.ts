@@ -1,6 +1,6 @@
 import urls from './urls';
-import { setApiOptions } from '../../../shared/utilities/services';
-import { api } from '../../index';
+import { setApiOptions } from '@/utilities/services';
+import { api } from '@/index';
 
 export const getRestaurantsService = (queryParam) => {
     const options = setApiOptions(urls('getRestaurant'), { queryParam });

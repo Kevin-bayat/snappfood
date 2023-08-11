@@ -66,10 +66,10 @@
         -webkit-box-direction: normal;
         flex-direction: row;
         -webkit-box-pack: start;
-        justify-content: flex-start;
+        justify-content: space-between;
         -webkit-box-align: start;
-        align-items: flex-start;
-        padding: 2px 4px 2px 2px;
+        align-items: center;
+        padding: 2px 6px 2px 2px;
         border-radius: 4px;
         background-color: $dark-green;
         color: $yellow-green;
